@@ -12,10 +12,10 @@ function App() {
       <dl className="dictionary">
         {posts.map((post) => (
           <Card
-          key={post.id}
-          userID={post.userId}
-          title={post.title}
-          body={post.body}
+            key={post.id}
+            userID={post.userId}
+            title={post.title}
+            body={post.body}
           /> 
         ))}
       </dl>
