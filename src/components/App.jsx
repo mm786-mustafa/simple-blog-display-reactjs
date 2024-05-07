@@ -1,20 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Card from "./Card";
+import posts from "../blogPosts";
 
 function App() {
-  const [posts, setPosts] = useState([]);
-
-  useEffect(() => {
-    fetch("https://dummyjson.com/posts")
-      .then((response) => response.json())
-      .then((data) => {
-        setPosts(data.posts);
-      })
-      .catch((error) => {
-        console.error("Error fetching data:", error);
-      });
-  }, []);
-
   return (
     <div>
       <h1>
